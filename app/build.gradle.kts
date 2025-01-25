@@ -47,5 +47,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation("com.airbnb.android:lottie:6.0.0")
+    implementation ("org.java-websocket:Java-WebSocket:1.5.3")
     implementation(libs.kotlinx.coroutines.android)
 }

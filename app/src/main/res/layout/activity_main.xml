@@ -14,7 +14,7 @@
         android:id="@+id/animation_layout"
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:visibility="gone"
+
         android:layout_alignParentBottom="true">
 
         <com.airbnb.lottie.LottieAnimationView
@@ -36,7 +36,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="40dp"
-        android:visibility="gone"
+
         android:layout_marginStart="100dp">
 
         <ImageView
@@ -53,7 +53,6 @@
         android:layout_height="90dp"
         android:background="@drawable/receive_circle"
         android:orientation="horizontal"
-        android:visibility="gone"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="40dp"
