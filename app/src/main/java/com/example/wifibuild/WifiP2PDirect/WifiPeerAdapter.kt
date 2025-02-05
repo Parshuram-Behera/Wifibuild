@@ -1,4 +1,4 @@
-package com.example.wifidirect
+package com.example.wifibuild.WifiP2PDirect
 
 import android.content.Context
 import android.net.wifi.p2p.WifiP2pDevice

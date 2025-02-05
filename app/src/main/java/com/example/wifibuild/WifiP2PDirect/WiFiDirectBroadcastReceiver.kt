@@ -1,4 +1,4 @@
-package com.example.wifidirect
+package com.example.wifibuild.WifiP2PDirect
 
 import android.Manifest
 import android.content.BroadcastReceiver
@@ -10,7 +10,6 @@ import android.net.NetworkInfo
 import android.net.wifi.p2p.WifiP2pDevice
 import android.net.wifi.p2p.WifiP2pManager
 import androidx.core.app.ActivityCompat
-import com.example.wifibuild.WifiTestActivity
 import com.example.wifibuild.permissionManager.MyPermissionManager
 
 class WiFiDirectBroadcastReceiver(

@@ -1,4 +1,4 @@
-package com.example.wifibuild
+package com.example.wifibuild.WifiP2PDirect
 
 import android.Manifest
 import android.content.BroadcastReceiver
@@ -18,10 +18,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+import com.example.wifibuild.R
 import com.example.wifibuild.permissionManager.MyPermissionManager
-import com.example.wifidirect.WiFiDirectBroadcastReceiver
-import com.example.wifidirect.WifiPeerAdapter
-import java.util.logging.Handler
 
 class WifiTestActivity : AppCompatActivity() {
     private lateinit var discoverButton: Button
