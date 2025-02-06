@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:layout_margin="8dp"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:contentDescription="@string/app_icon"
+        android:padding="5.5dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <CheckBox
+        android:id="@+id/SelectCheck"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-27dp"
+        android:clickable="false"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/appIcon"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Apple"
+
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
