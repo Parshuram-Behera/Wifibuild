@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@+id/swipeButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@id/track"
+            app:layout_constraintTop_toTopOf="@id/track"
+            app:layout_constraintStart_toStartOf="@id/track" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/swipeButton"
+            app:layout_constraintEnd_toEndOf="@id/track"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@id/track"
+            app:layout_constraintTop_toTopOf="@id/track" />
+
+    </ConstraintSet>
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@+id/start"
+        app:duration="400">
+        <OnSwipe app:touchAnchorId="@id/swipeButton" app:moveWhenScrollAtTop="true" app:dragDirection="dragRight" app:touchAnchorSide="start"/>
+    </Transition>
+</MotionScene>
