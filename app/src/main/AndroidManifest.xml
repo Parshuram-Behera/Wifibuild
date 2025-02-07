@@ -8,13 +8,15 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-feature
         android:name="android.hardware.wifi.direct"
         android:required="true" />
 
-    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" />
+
 
     <application
         android:allowBackup="true"
@@ -28,13 +30,22 @@
         android:theme="@style/Theme.WifiBuild"
         tools:targetApi="31">
         <activity
-            android:name=".appListing.activity.AppListActivity"
+            android:name=".TestPack.AllTest"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".App.activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".appListing.activity.AppListActivity"
+            android:exported="true">
+
         </activity>
         <activity
             android:name=".QRCodeScanner.activity.QRScannerActivity"
@@ -47,15 +58,13 @@
             tools:replace="android:screenOrientation" />
         <activity
             android:name=".QRCodeScanner.activity.QRActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".WifiP2PDirect.WifiTestActivity"
             android:exported="true" />
         <activity
             android:name=".WifiScanner.WifiScannerActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
