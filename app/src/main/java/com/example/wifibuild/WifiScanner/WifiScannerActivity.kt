@@ -7,6 +7,7 @@ import android.content.IntentFilter
 import android.content.pm.PackageManager
 import android.location.LocationManager
 import android.net.wifi.WifiManager
+import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
@@ -16,6 +17,7 @@ import android.widget.ListView
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
 import com.example.wifibuild.R
 import com.example.wifibuild.permissionManager.MyBaseActivity
@@ -89,6 +91,7 @@ class WifiScannerActivity : MyBaseActivity() {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     private fun startWifiScan() {
         if (wifiManager.isWifiEnabled) {
             if (!isLocationEnabled()) {
